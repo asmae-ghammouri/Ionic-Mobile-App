@@ -1,0 +1,37 @@
+<ion-content class="ion-padding">
+  <h1>Welcome to the best training,</h1>
+ 
+
+<ion-content class="ion-padding" class="center">
+  <form class="form" [formGroup]="userForm" (ngSubmit)="signIn(userForm.value)">
+    <div class="wrap-input">
+    <ion-item>
+      <ion-label class="ion-label" position="floating"  >  <ion-icon name="mail"></ion-icon> Email :</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+  </div>
+    <ng-container *ngFor="let error of error_msg.email">
+      <div *ngIf="userForm.get('email').hasError(error.type) && (userForm.get('email').dirty || userForm.get('email').touched)">
+        {{ error.message }}
+      </div>
+    </ng-container>
+    <div class="wrap-input">
+    <ion-item>
+      <div class="label">
+      <ion-label position="floating" > <ion-icon name="lock-open-outline"></ion-icon> Password :</ion-label>
+    </div>
+      <ion-input type="password" formControlName="password" class="form-controll" required></ion-input>
+    </ion-item>
+  </div>
+    <ng-container *ngFor="let error of error_msg.password">
+        <div *ngIf="userForm.get('password').hasError(error.type) && (userForm.get('password').dirty || userForm.get('password').touched)">
+          {{ error.message }}
+        </div> 
+    </ng-container>
+    <div class="container-form-btn">
+    <ion-button type="submit" expand="center" [disabled]="!userForm.valid">Sign in</ion-button>
+  </div>
+    <label class="ion-text-center" color="danger">{{errorMsg}}</label>
+  </form>
+  <p class="footer-text">If you don't have an account,<a (click)="goToSignup()">Register</a></p>
+</ion-content> 

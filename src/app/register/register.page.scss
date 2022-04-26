@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 15%;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  color: #939fab;
+  font-weight: 600;
+}
+
+form {
+  margin-top: 100px;
+
+}
+
+.wrap-input {
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin-bottom: 26px;
+  box-shadow: 0 10px 10px 0px rgba(186, 216, 239, 0.12);
+
+
+}
+
+.ion-input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  line-height: 1.2;
+  border: none;
+  outline: none;
+  height: 46px;
+  padding: 0 20px 23px;
+
+}
+
+ion-button {
+  --ion-color-primary: #1b9e72;
+  ;
+
+
+
+}
+
+ion-input {
+
+
+  margin-top: 30px;
+}
+
+ion-label {
+  color: #110c0d;
+  font-size: larger;
+
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 45%;
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1b9e72;
+  }
+}
+
+// .ion-input{
+
+//   position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     font-size: 17px;
+//     font-weight: 600;
+//     border: 2px solid #e7ebee;
+//     border-radius: 10px;
+//     outline: none;
+//     padding: 1rem;
+//     background: none;
+//     z-index: 1;
+//     color: #171c25;
+// }
+.container-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 42px;
+  text-transform: uppercase;
+  padding-top: 5px;
+}

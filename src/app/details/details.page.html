@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card  >
+    <ion-img src={{Image.url}}></ion-img>   
+    <ion-card-header>
+      <ion-label><span class="b">Title: </span>{{ Image.name}}</ion-label><br/>
+      <ion-label ><span class="b">Price: </span> {{ Image.price}}</ion-label> <br/>
+      <ion-label><span class="b">Description: </span> {{ Image.description}}</ion-label>
+
+
+     
+    </ion-card-header>
+  
+    <ion-button expand="block" color="primary" (click)="nextpage()">Let's Started</ion-button>
+  </ion-card>
+</ion-content>

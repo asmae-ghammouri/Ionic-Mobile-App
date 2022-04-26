@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Training</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let image of images"  (click)="showMore(image)" >
+    <ion-img src={{image.url}}></ion-img>
+    <ion-item   lines="none">
+    <ion-card-header>
+      <ion-card-subtitle>{{ image.name }}</ion-card-subtitle>
+    </ion-card-header></ion-item>
+  </ion-card>
+
+</ion-content>
